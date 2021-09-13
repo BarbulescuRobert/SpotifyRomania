@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spotify Romania</title>
+  <meta name="description" content="A simple project.">
+
+  <meta property="og:title" content="Spotify Romania">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="img/spotify.png" style="margin-left:10px"alt="Norway" width="105px", >
+    <a class="navbar-brand" style="font-family: 'Montserrat', sans-serif; color: #1DB954; font-style: bold;" href="#"> <span style = "color: red;"> Ro</span><span style = "color: rgb(220, 207, 21);">ma</span><span style = "color: blue;">nia</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a id="acasa" class="nav-item nav-link active" href="#" onclick="acasa()">Acasa</a>
+        <a id="top10" class="nav-item nav-link" href="#" onclick="top10()">Top 10</a>
+        <a id="despre" class="nav-item nav-link" href="#" onclick="despre()">Despre</a>
+      </div>
+    </div>
+    <div>
+      <form style="display:flex; justify-content: center;margin:0 40px;">
+        <input id="searchField" size="100px" class="form-control" type="text" placeholder="Ex: 'Nane piesa/artist/album'..." aria-label="Cauta orice artist/song/album..." style="padding-right: 20px;">
+        <button class="btn btn-outline-success" type="submit" style="margin-left: 5px;" onclick="search()">Cauta</button>
+      </form>
+   </div>
+  </nav>
+  <!-- <div class="topnav">
+    <img src="img/spotify.png" style="margin-left:10px"alt="Norway" width="105px", >
+    <a class="navbar-brand" style="font-family: 'Montserrat', sans-serif; color: #1DB954; font-style: bold;"href="#"> <span style = "color: red;"> Ro</span><span style = "color: rgb(220, 207, 21);">ma</span><span style = "color:lightblue;">nia</span></a>
+    <a class="nu" href="#home">Home</a>
+    <a class="nu" href="#news">News</a>
+    <a class="nu" href="#contact">Contact</a>
+    <a class="nu" href="#about">About</a>
+  </div>   -->
+  <div class="container">
+      <div id="tokenSection" class="row">      
+        <p></p>
+        <input class="btn btn-primary btn-lg" type="button" onclick="requestAuthorization()" value="Request Authorization"><br/>
+      </div>
+      <div id="deviceSection" class="row">
+        <p id="uiu"></p>
+      </div>
+      <div id="top10Section" class="row" style="display: none;">
+        <div style="display: flex; justify-content: center; margin: 0 0;">
+          <button class="btn btn-primary" style="margin: 5px 10px;" onclick="top10button()">Top 10</button>
+          <button class="btn btn-primary" style="margin: 5px 10px;" onclick="top50button()">Top 50</button>
+          <button class="btn btn-primary" style="margin: 5px 10px;" onclick="top100button()">Top 100</button>
+        </div>
+        <div id="aici"></div>
+      </div>
+      <div id="searchSection" class="row" style="display: none; ">
+        <p id="ele" style="padding-top:30px"></p>
+      </div>
+      
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
