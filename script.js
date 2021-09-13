@@ -1,4 +1,4 @@
-var redirect_uri = "http://127.0.0.1:5500/index.html";
+var redirect_uri = "enter_your_redirect_uri";
 var client_id = "enter_your_client_id_from_spotify_account";
 var client_secret = "enter_your_client_secret_from_spotify_account";
 
