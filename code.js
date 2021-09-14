@@ -1,7 +1,6 @@
 var codeBlock =
   '<div class="column" >' +
   '<h1 style="display:flex; justify-content:center;">Acest site este un proiect personal, folosind Spotify API.</h1>' +
-  '<p style="text-align:center;">Mai jos sunt toti artistii romani pe care i-am introdus manual din Spotify. In caz ca exista vreun artist care are cont de Spotify Artists si nu apare aici, puteti lasa un mail la: <strong>gigel@yahoo.com</strong></p>' +
   '<p id="ion"></p>' +
   "</div>";
 
