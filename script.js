@@ -1,6 +1,6 @@
-var redirect_uri = "https://barbulescurobert.github.io/SpotifyRomania/";
-var client_id = "enter_your_client_id_from_spotify_account";
-var client_secret = "enter_your_client_secret_from_spotify_account";
+var redirect_uri = "http://127.0.0.1:5500/index.html";
+var client_id = "f07a6af9830f48ddb768ac78bddb5027";
+var client_secret = "6311fe39e78a478da3383c208c750c4c";
 
 var access_token = null;
 var refresh_token = null;
@@ -34,6 +34,7 @@ const artists = [
   "6H1YO0K9D0kNWvLoib4CRL", // Abi
   "60KR2lVVoYd6GIcfLoUjPI", // Dani Mocanu
   "5h0wBmd25qPcGSInl3dp66", // Tzanca Uraganu
+  "6o6jMpcBBv4jMOEE1Z4tlJ", // Jador
   "1WsXapPbIEOveVpEKjaGHu", // Ioana Ignat
   "264Be2Waq137vybMlFYCnu", // Theo Rose
   "7Ml36YHsejaW7jVjJAhW4a", // Liviu Teodorescu
@@ -386,6 +387,7 @@ function search() {
   }
   var type = "";
   var searchField = document.getElementById("searchField").value;
+  localStorage.setItem("search",searchField);
   document.getElementById("searchField").value = "";
   searchField.toLowerCase();
   if (searchField.includes("album")) {
@@ -551,4 +553,10 @@ function despre() {
   document.getElementById("despre").classList.add("active");
   document.getElementById("acasa").classList.remove("active");
   document.getElementById("top10").classList.remove("active");
+}
+
+function back(){
+  var searchField = localStorage.getItem("search");
+  document.getElementById("searchField").value = searchField;
+  search();
 }

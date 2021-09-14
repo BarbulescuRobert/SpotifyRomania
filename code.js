@@ -160,14 +160,16 @@ function cautaPiesa(name, audio, piesa, img) {
   function AlbumTitle(name, albumName, img) {
     var imagBlock =
       '<div class="center" style="color: black; padding:0 50vh">' +
+      '<button class="btn btn-outline-success" id="back" onclick="back()" style="color:black; margin:40px 20px">&laquo; Inapoi' +
+      "</button>" +
       '<div id = "gigi" style="display: flex; align-items:center;"' +
       '<p><img src="' +
       img +
-      '" style="margin-right:10px;"alt="Norway" width="100" height="100">' +
+      '" style="margin:0 20px;"alt="Norway" width="100" height="100">' +
       name +
       "</p>" +
       "</div>" +
-      '<h1 style="display: flex; align-items:center;">' + "Album: "+
+      '<h1 style="display: flex; align-items:center; margin-left:20px">' + "Album: "+
       albumName +
       "</h1>" +
       "</div>";
@@ -179,7 +181,7 @@ function cautaPiesa(name, audio, piesa, img) {
   }
   function cautaPiesaAlbum(name, audio, piesa) {
     var imagBlock =
-      '<div class="center" style="color: black; padding:0 30vh">' +
+      '<div class="center" style="color: black; padding:0 45vh">' +
       '<div id = "gigi" style="display: flex; align-items:center;"' +
       '<h1>' +
       name +
