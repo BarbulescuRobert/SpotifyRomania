@@ -1,6 +1,6 @@
 var redirect_uri = "https://barbulescurobert.github.io/SpotifyRomania/index.html"; 
-var client_id = "f07a6af9830f48ddb768ac78bddb5027"; 
-var client_secret = "6311fe39e78a478da3383c208c750c4c";
+var client_id = "enter_your_client_id"; 
+var client_secret = "enter_your_client_secret";
 
 var access_token = null;
 var refresh_token = null;
