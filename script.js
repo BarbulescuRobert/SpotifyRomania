@@ -1,4 +1,4 @@
-var redirect_uri = "https://barbulescurobert.github.io/SpotifyRomania/index.html"; 
+var redirect_uri = "https://barbulescurobert.github.io/SpotifyRomania/index.html"; //enter this to your spotify account developer settings
 var client_id = "enter_your_client_id"; 
 var client_secret = "enter_your_client_secret";
 
