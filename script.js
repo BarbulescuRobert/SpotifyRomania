@@ -44,7 +44,7 @@ const artists = [
 const AUTHORIZE = "https://accounts.spotify.com/authorize";
 const TOKEN = "https://accounts.spotify.com/api/token";
 const PLAYLISTS = "https://api.spotify.com/v1/me/playlists";
-const SEARCH = "https://api.spotify.com/v1/search";
+const SEARCH = "https://api.spotify.com/v1/search/";
 const ARTIST = "https://api.spotify.com/v1/artists/";
 const ALBUM = "https://api.spotify.com/v1/albums/";
 
