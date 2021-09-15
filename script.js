@@ -375,9 +375,9 @@ function repeta(nr) {
 }
 
 function search() {
-  if (document.getElementById("top10Section").style.display == "block")
+  if (document.getElementById("top10Section").style.display != "none")
     document.getElementById("top10Section").style.display = "none";
-  if (document.getElementById("deviceSection").style.display == "block")
+  if (document.getElementById("deviceSection").style.display != "none")
     document.getElementById("deviceSection").style.display = "none";
 
   document.getElementById("searchSection").style.display = "block";
